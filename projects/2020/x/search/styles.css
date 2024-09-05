@@ -1,0 +1,74 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    position: relative; /* Needed for absolute positioning of links */
+}
+
+.nav-links{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #686868;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 13px;
+}
+
+.search-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-form {
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack the input and button vertically */
+    align-items: center; /* Center the input and button horizontally */
+}
+
+.search-input {
+    width: 450px;
+    line-height: 22px;
+    padding: 10px;
+    margin-bottom: 20px; /* Add space between the input and button */
+    border-radius: 15px; /* Round the edges of the input box */
+    border: 1px solid #ccc; /* Add a border to the input box */
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Add space between the buttons */
+}
+
+.search-button, .lucky-button {
+    padding: 10px 20px;
+    background-color: #f8f9fa;;
+    border: 1px solid #f8f9fa;;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 0 16px;
+    height: 36px;
+    text-align: center;
+    user-select: none;
+    color: #686868;
+}
+
+.search-button:hover, .lucky-button:hover {
+    border-width: 2px; /* Make the border thicker on hover */
+    border-color: #f8f9fa; /* Keep the border color the same */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add depth with shadow */
+}
