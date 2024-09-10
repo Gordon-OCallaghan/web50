@@ -1,10 +1,19 @@
 /* styles.css */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    box-sizing: border-box;
+}
+
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full viewport height */
-    margin: 0; /* Remove default margin */
     position: relative; /* Needed for absolute positioning of links */
 }
 
@@ -44,7 +53,8 @@ body {
 }
 
 .search-input {
-    width: 450px;
+    width: 140%;
+    max-width: 550px;
     line-height: 22px;
     padding: 10px;
     margin-bottom: 20px; /* Add space between the input and button */
@@ -76,4 +86,45 @@ body {
     border-width: 2px; /* Make the border thicker on hover */
     border-color: #f8f9fa; /* Keep the border color the same */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add depth with shadow */
+}
+
+.lower-upper-nav{
+    position: fixed;
+    bottom: 36px; /* Adjusted to be above the lower nav bar */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    color: #686868;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    border-bottom: 1px solid #d2d2d2; /* Thin border between the nav bars */
+    z-index: 1000; /* Ensure it is above other elements */
+    padding: 10px 20px;
+    margin: 0; /* Remove any margin */
+}
+
+.lower-nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    margin: 0; /* Remove any margin */
+}
+
+.lower-nav-bar{
+    display: flex;
+    gap: 20px;
+}
+
+.lower-nav-bar a{
+    text-decoration: none;
+    color: #686868;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
 }
