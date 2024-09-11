@@ -1,0 +1,77 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    position: relative; /* Needed for absolute positioning of links */
+}
+
+.nav-links{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #686868;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 13px;
+}
+
+
+
+.form-container {
+    max-width: 1600px;
+    padding: 20px;
+    margin: 0 0 0 20px; /* Add left margin */
+    text-align: left; /* Align text to the left */
+    float: left; /* Ensure the container is aligned to the left */
+    margin-top: 120px; /* Adjust the value as needed */
+}
+.form-container div {
+    
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+
+    margin-right: 10px; /* Space between label and input */
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    width: 250px; /* Fixed width for labels */
+    
+}
+
+input[type="text"] {
+    flex: 10; /* Take up remaining space */
+    padding: 8px;
+    box-sizing: border-box;
+    width: 600px; /* Ensure the input takes up the full width */
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    font-size: 14px;
+    color: #686868;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+button:hover {
+    border-width: 2px; /* Make the border thicker on hover */
+    border-color: #f8f9fa; /* Keep the border color the same */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add depth with shadow */
+}
